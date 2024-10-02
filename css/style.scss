@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    // box-sizingの初期値はcontent-box
+    // box-sizing: content-box;
+}
+
+body {
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #333;
+    // text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        list-style: none;
+    }
+}
+
+
+.header {
+    .header_hero_img {
+        height: 100vh;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.recipedaiary {
+    height: 295px;
+    text-align: center;
+    padding: 83px 0 0;
+
+    p {
+        padding-top: 20px;
+    }
+}
+
+.cooking_img_item {
+    display: grid;
+    // justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 500px;
+    // position: relative;
+
+    .cooking_img01,
+    .cooking_img02,
+    .cooking_img03 {
+        width: fit-content;
+        overflow: hidden;
+        height: 500px;
+        // margin: -10px;
+
+        img {
+            // position: absolute;
+            width: 100%;
+            height: auto;
+            /* トップを基準に中央配置 */
+            // left: 50%;
+            // overflow: hidden;
+        }
+    }
+
+}
+
+.button_sns {
+    height: 287px;
+    text-align: center;
+    padding: 60px;
+
+    .button {
+        button {
+            width: 235px;
+            height: 59px;
+            background-color: white;
+            border: 1px solid black;
+
+            p {
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .sns {
+        .sns_link {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+
+            .sns_link01,
+            .sns_link02,
+            .sns_link03 {
+                font-family: sans-serif;
+                font-size: 10px;
+            }
+
+            .sns_link01,
+            .sns_link02 {
+                margin-right: 19px;
+            }
+        }
+    }
+}
+
+.footer {
+    padding-top: 19px;
+    p {
+        font-family: sans-serif;
+        font-size: 11px;
+
+    }
+}

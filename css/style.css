@@ -1,0 +1,112 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #333;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  list-style: none;
+}
+
+.header .header_hero_img {
+  height: 100vh;
+  overflow: hidden;
+}
+.header .header_hero_img img {
+  width: 100%;
+  height: auto;
+}
+
+.recipedaiary {
+  height: 295px;
+  text-align: center;
+  padding: 83px 0 0;
+}
+.recipedaiary p {
+  padding-top: 20px;
+}
+
+.cooking_img_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 500px;
+}
+.cooking_img_item .cooking_img01,
+.cooking_img_item .cooking_img02,
+.cooking_img_item .cooking_img03 {
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  height: 500px;
+}
+.cooking_img_item .cooking_img01 img,
+.cooking_img_item .cooking_img02 img,
+.cooking_img_item .cooking_img03 img {
+  width: 100%;
+  height: auto;
+  /* トップを基準に中央配置 */
+}
+
+.button_sns {
+  height: 287px;
+  text-align: center;
+  padding: 60px;
+}
+.button_sns .button button {
+  width: 235px;
+  height: 59px;
+  background-color: white;
+  border: 1px solid black;
+}
+.button_sns .button button p {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.button_sns .sns .sns_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.button_sns .sns .sns_link .sns_link01,
+.button_sns .sns .sns_link .sns_link02,
+.button_sns .sns .sns_link .sns_link03 {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+.button_sns .sns .sns_link .sns_link01,
+.button_sns .sns .sns_link .sns_link02 {
+  margin-right: 19px;
+}
+
+.footer {
+  padding-top: 19px;
+}
+.footer p {
+  font-family: sans-serif;
+  font-size: 11px;
+}/*# sourceMappingURL=style.css.map */
